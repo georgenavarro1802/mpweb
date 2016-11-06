@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+    <section id="top-image" class="blog-page" style="background-image: url({% static 'img/ours/responsive-banner.png' %});">
+        <div class="overlay-mask"></div>
+        <div class="page-title-section row">
+            <div class="large-9 large-centered small-centered columns">
+                <h4>{{ title }}</h4>
+            </div>
+        </div>
+
+        <!-- Header Menu -->
+        <header id="top-header" class="homepage-header ">
+            <a href="#" class="explore" style="background-image: url({% static 'img/scroll-arrow.png' %});"></a>
+            <div class="row">
+                <div class="large-12  columns ">
+                    <div class="logo-holder">
+                        <a href="/" title="MP">
+                            <img src="{% static 'img/ours/logo_resumido.jpg' %}"/>
+                        </a>
+                    </div>
+                    <div class="skew-wrapper"></div>
+                    <ul id="nav-menu" class="menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1080"><a href="/">Home</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-one">About</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#services">Services</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ereputation">E-reputation</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="/brand">Corporate Identity</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="#">Responsive Design</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ecommerce">E-Commerce</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#ereputation">E-reputation</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/leaders">Leaders</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/businesses">Businesses</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-three">Team</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="/#section-gallery">Gallery</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Social Icons -->
+        <ul id="socials">
+            <li><a target="_blank" title="Twitter" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="single-content row">
+                <div class="large-10 columns fontcomun" style="text-align: justify">
+                    <h2>
+                        George Navarro
+                        <a style="margin-left: 20px;" target="_blank" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a>
+                        <a style="margin-left: 20px" target="_blank" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a>
+                    </h2>
+                    <p class="justify columns">
+                        <b class="rojo">Office:</b> Project Manager.
+                    </p>
+                    <p class="justify columns">
+                        <b class="rojo">Academic training: </b>
+                        Senior Software Developer and Engineer
+                    </p>
+                    <p class="justify columns">
+                        <b class="rojo">E-mail:</b> gnavarrog1802@gmail.com
+                    </p>
+                    <p class="justify columns">
+                        <b class="rojo">Phone:</b> +1 (786)-663-0517
+                    </p>
+                </div>
+                <div class="large-2 columns">
+                    <div class="row">
+                        <figure>
+                            <img class="imagencirculo" src="{% static 'img/ours/jordy.jpg' %}" alt="George" >
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="large-12 columns">
+                <h3>Skills</h3>
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: #d35400;"><span>Web Apps</span></div>
+                    <div class="skillbar-bar" style="background: #e67e22;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #2980b9;"><span>Mobile Apps</span></div>
+                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: #2c3e50;"><span>Researchg</span></div>
+                    <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: #46465e;"><span>Security</span></div>
+                    <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #333333;"><span>Servers</span></div>
+                    <div class="skillbar-bar" style="background: #525252;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: #27ae60;"><span>Support</span></div>
+                    <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+                <br><br>
+
+                <div class="clearfix columns">
+                    <div class="row">
+                        <h3>Favorites Activities</h3>
+                        <div class="circle-container ">
+                            <h5 class="center">Spend with family</h5>
+                            <div class="circlestat" data-dimension="200" data-text="100%" data-width="30" data-fontsize="38" data-percent="100" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                        </div>
+
+                        <div class=" circle-container ">
+                            <h5 class="center">Italian Food</h5>
+                            <div class="circlestat" data-dimension="200" data-text="90%" data-width="30" data-fontsize="38" data-percent="90" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                        </div>
+
+                        <div class=" circle-container ">
+                            <h5 class="center">keep me updated</h5>
+                            <div class="circlestat" data-dimension="200" data-text="95%" data-width="30" data-fontsize="38" data-percent="95" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                        </div>
+                        <div class="circle-container ">
+                            <h5>listen to all kinds of music</h5>
+                            <div class="circlestat" data-dimension="200" data-text="85%" data-width="30" data-fontsize="38" data-percent="85" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

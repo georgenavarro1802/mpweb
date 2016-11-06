@@ -1,0 +1,1036 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contenido %}
+    <section id="top-image" class="homepage-two" style="background-image: url({% static 'img/new_york.jpg' %});">
+        <div class="overlay-mask"></div>
+        <div id="section-four" class="homepage-two">
+            <div class="our-services row ">
+                <div class="large-12 columns">
+                    <h2 class="estiloh3"> MP Website</h2>
+                    <figure >
+                        <div class="drawings">
+                            <img class="illustration " src="{% static 'img/ours/imagen-header-.png' %}" alt="Mockup Illustration" style="margin-left: 170px"/>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.5%" height="100%" viewBox="0 0 1199 593" enable-background="new 0 0 1199 593" xml:space="preserve" class="line-drawing">
+                                <path fill="none" stroke="#F54F36" stroke-miterlimit="10" d="M0,591.75V374.576c0,0,2.5-15.44,16-28.89s32-11.954,32-11.954h53
+                                    l8-53.795l107,40.844v-53.795c0,0,5-32.875,40-34.868c35-1.992,151,0,151,0L383,28.893c0,0,4-19.924,11-24.905s24-3.985,35,0
+                                    s538,170.352,538,170.352s10,3.985,15,11.955c5,7.969,10,40.844,10,40.844l122-10.958l85,137.477l-88,88.662l47,77.705l-94,60.769
+                                    l4,10.958">
+                                </path>
+                                <path fill="none" stroke="#F54F36" stroke-miterlimit="10" d="M499,591.75V265.99c0,0-6-19.924-15-25.901c-9-5.977-51-7.97-64-7.97"></path>
+                                <path id="null" fill="none" stroke="#F54F36" d="M479,591.75L479 318.789 240 318.789 240 330.743 "></path>
+                                <path id="null" fill="none" stroke="#F54F36" d="M803,13.949L703 369.596 789 481.171 977 455.27 862 375.573 973 341.702 973 228.134 969 207.214 420 32.877 442 228.134 "></path>
+                                <path id="null" fill="none" stroke="#F54F36" d="M1067,332.736L1114 216.18 1199 353.656 1111 442.318 1158 520.023 "></path>
+                                <path id="null" fill="none" stroke="#F54F36" d="M159,560.867L266 455.27 194 455.27 63 498.106 85 418.41 23 418.41 23 591.75 "></path>
+                                <path id="null" fill="none" stroke="#F54F36" d="M113.824,281.778L192 450.288 330 366.033 "></path>
+                            </svg>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        {% block header %}
+            <!-- Header Menu -->
+            <header id="top-header" class="homepage-header ">
+                <a href="#section-one" class="explore" style="background-image: url({% static 'img/scroll-arrow.png' %});"></a>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="logo-holder">
+                            <a href="/" title="MP">
+                                <img src="{% static 'img/ours/logo_resumido.jpg' %}"/>
+                            </a>
+                        </div>
+                        <div class="skew-wrapper"></div>
+                        <ul id="nav-menu" class="menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1080"><a href="#">Home</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#section-one">About</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#services">Services</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ereputation">E-reputation</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="/brand">Corporate Identity</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/responsive">Responsive Design</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/ecommerce">E-Commerce</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#ereputation">E-reputation</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/leaders">Leaders</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/businesses">Businesses</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#section-three">Team</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="#section-gallery">Gallery</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#contact-section">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Social Icons -->
+            <ul id="socials">
+                <li><a target="_blank" title="Twitter" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a> </li>
+            </ul>
+        {% endblock %}
+
+    </section>
+
+    <section id="section-one" class="section-wrapp-container" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+            <div class="skew-wrapper"></div>
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2> THIS IS WHO WE ARE</h2>
+                <p>
+                    <span style="color: #161616;">
+                       We are a French-Ecuadorian Agency with a dedicated, passionate and multi-diciplinary team of
+                        Digital specialists who are proud to deliver out standing work for our amazing clients.
+                    </span>
+                    <br><br>
+                </p>
+            </div>
+        </div>
+        <div class="row doings">
+            <div class="large-4 medium-4 waypoint-element columns">
+                <div class="icon-holder icon-holder-1">
+                    <div class="icon"></div>
+                </div>
+                <h4>We are Kind</h4>
+                <p>
+                    We are kind people who care deeply.<br/>
+                    We note that kindness and caring are increasingly values people are demanding of the brands they interact with.
+                </p>
+            </div>
+            <div class="large-4 medium-4 waypoint-element columns">
+                <div class="icon-holder icon-holder-2">
+                    <div class="icon"></div>
+                </div>
+                <h4>We are inspired</h4>
+                <p>We are inspired by new digital trends, we experiment new solutions and implement it to our proyect.</p>
+            </div>
+            <div class="large-4 medium-4 waypoint-element columns">
+                <div class="icon-holder icon-holder-3">
+                    <div class="icon"></div>
+                </div>
+                <h4>We are youngs</h4>
+                <p>We are a young  motivated labor force group with a fresh vision of branding.</p>
+            </div>
+        </div>
+    </section>
+
+    {# First Parallax #}
+    <div class="parallax parallax-squares" style="background: url({% static 'img/paralax1mac.jpg' %});">
+        <div class="parallax-overlay"></div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="square-container">
+                    <div class="square-holder">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico1.png' %}" alt="Featured Ico">
+                            <p> We Design for All devices </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-two">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico2.png' %}" alt="Featured Ico">
+                            <p> We Work Under All conditions </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-three">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico3.png' %}" alt="Featured Ico">
+                            <p> Our office is pretty amazing </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-four">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico4.png' %}" alt="Featured Ico">
+                            <p> We work out to feel better </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-six">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico5.png' %}" alt="Featured Ico">
+                            <p> We integrate the ecommerce </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-seven">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico6.png' %}" alt="Featured Ico">
+                            <p> each client is a victory </p>
+                        </div>
+                    </div>
+                    <div class="square-holder square-eight">
+                        <div class="square-content">
+                            <img src="{% static 'img/service-ico7.png' %}" alt="Featured Ico">
+                            <p> We drink a lot of coffee </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="section-wrapp-container" style="padding-top: 80px; padding-bottom: 30px;">
+        <div class="row">
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>Check Out what we offer</h2>
+                <div class="columns large-9 large-centered small-centered intro-text ">
+                    <h4>Web responsive</h4>
+                </div>
+                <p>
+                    <span style="color: #161616;">
+                        As a full Digital Agency, we build and design beautiful responsive websites. We ensure they are engaging, interactive, and use the latest technologies to provide the best user-experience, such as HTML5, CSS3, JavaScript, JQuery, Bootstrap… etc.
+                        We are a dedicated, passionate, and multi-disciplinary team of Digital specialists who are proud to deliver outstanding work for our amazing clients.
+                        Our digital solutions deliver compelling results and significant Return on Investment (ROI).
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="section-two" class="section-wrapp-container" style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="mockups-section row">
+            <div class="large-12 columns">
+                <ul id="mockups">
+                    <li><a href="/responsive"><img src="{% static 'img/iphone1.png' %}"></a></li>
+                    <li><a href="/ecommerce"><img src="{% static 'img/iphone2.png' %}"></a></li>
+                    <li><a href="/ereputation"><img src="{% static 'img/iphone3.png' %}"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax parallax-squares" style="background: url({% static 'img/paralax2ecomerce.jpg' %});">
+        <div class="parallax-overlay"></div>
+        <div class="row">
+            <div class="large-9 large-centered small-centered columns">
+                <ul class="parallax-slides">
+                    <li>
+                        <h4>E-commerce</h4>
+                        <p>
+                            Each eCommerce website is designed to captivate customer´s atention and sell them not only products but the best experience of your brand.
+                            Our multi-disciplinary team of digital specialists bring expertise focused on UX Design, Responsive HTML5, User Conversion and lifespan of the websites.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Mobile Applications</h4>
+                        <p>
+                            <span><b>To ensure each website remains fresh and performing at its maximum potential.</b></span> <br>
+                            we commit to a follow-up plan, structured and strategic to develop your Brand impact.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Design</h4>
+                        <p>
+                            <span><b>Imagination is as important as knowledge!</b></span> <br>
+                            Our design univers is made of free spirits who draw, rethink, brainstorm to give all the creative potential to your proyects with the last design tools 3DMax,
+                            Blender and ThreeJS. In our team work mentality, specifications are only an opportunity to create what others don´t dare and this is thanks to our nature of challengers,
+                            that  we keep dreaming to reach the unique for each project. To conclude with a quotation we asume «our customers will have three responses to a piece of design: yes, no,
+                            and WOW! Wow is the one to aim for.» Milton Glaser.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Strategy</h4>
+                        <p>
+                            <span><b>To ensure each website remains fresh and performing at its maximum potential.</b></span> <br>
+                            we commit to a follow-up plan, structured and strategic to develop your Brand impact.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Multilingual social media management</h4>
+                        <p>
+                            Unlike the traditional world of advertising, the digital world allows brands to create a qualitative dialogue that build trust and affinity.
+                            At our company we love to create addictive relationships with communities by sharing rich editorial content.
+                            We protect brands and their customers 24/7 through content moderation and triage of customer issues in three languages: Spanish, English and French.
+                            We assist brands in the management of live situations to assure them the minimum of damage to their brand in case of social media crisis. Our community
+                            management policy is e-reputation driven so as to guarantee your peace of mind in case of social media crisis.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="section-two" class="section-wrapp-container" style="padding-top: 50px; padding-bottom: 1px;">
+        <div class="row">
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>Brand experience and ROI</h2>
+                <p>
+                    <span style="color: #000000;">
+                       We firmly believe in the power to captivate a consumer audience with Brand experience. We understand the challenge it represents to sell online and we commit to deliver an outstanding Return on Investment every time.
+                        Our team is at the forefront of breaking technology and eCommerce innovation, this ensures your online stores stays ahead of the competition. Working across a broad range of platforms from Open Source JQuery, Bootstrap, Python, Django, PostgreSQL.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ereputation" style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="row">
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>E-Reputation</h2>
+                <p>
+                    <span style="color: #000000;">
+                        Whether you are a business or an individual, your name is looked up on search engines by a large number of people. Those search results influence others' perception of you.
+                        Your search engine results are critical for your online reputation.
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-6 columns">
+                <div class="intro-text">
+                    <h2>Leaders</h2>
+                </div>
+            </div>
+            <div class="large-6  columns">
+                <div class="intro-text">
+                    <h2>Businesses</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-6 columns">
+                <div class="flip-container" style="padding-left: 25%">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="{% static 'img/ours/lideres.png' %}">
+                            <div class="flipp-wrapp"></div>
+                        </div>
+                        <div class="back">
+                            <div class="border"></div>
+                            <div class="flipp-wrapp">
+                                <h5>Leaders</h5><br>
+                                <p>Control your online reputation with our <br>Ebodyguard and protect your profesional life.<br>
+                                    Ebodyguard for leaders is a monitoring tool of social networks and different types of sources.
+                                    Based on a search engine that continuously scans various types of sources (online press, blogs, forums, microblogs, social networks, videos, photos ...)</p>
+                                <a href="/leaders"><i class="fa fa-book"></i> Read more</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="large-6 columns">
+                <div class="flip-container"style="padding-left: 25%">
+                    <div class="flipper">
+
+                        <div class="front">
+                            <img src="{% static 'img/ours/negocio.png' %}">
+                            <div class="flipp-wrapp">
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="border"></div>
+                            <div class="flipp-wrapp ">
+                                <h5>Businesses</h5> <br>
+                                <p>Control your online reputation with our. Ebodyguard and protect your profesional life.<br>
+                                    Along with our SEO, programation and tracking expertise, we have created a monitoring tool wich
+                                    collects and analyse data flowing over your business on the web. </p><br>
+                                <a href="/businesses"><i class="fa fa-book"></i> Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row doing">
+            <div class="large-3 medium-3 waypoint-element columns">
+                <div class="icon-holder icon-holder-1">
+                    <img src="{% static 'img/ours/oculus.png' %}">
+                </div>
+
+                <p style="text-align: left">
+                    <strong>Watch</strong> and centralize a flow of information in an unique user interface,
+                    in a way that is easy to read.
+                </p>
+            </div>
+            <div class="large-3 medium-3 waypoint-element columns">
+                <div class="icon-holder icon-holder-2">
+                    <img src="{% static 'img/ours/people.png' %}">
+                </div>
+                <p style="text-align: left">
+                    <strong>Watch</strong><strong>Discuss</strong> with your influencers,
+                    ambassadors or detractors.
+                </p>
+            </div>
+            <div class="large-3 medium-3 waypoint-element columns">
+                <div class="icon-holder icon-holder-3">
+                    <img src="{% static 'img/ours/estadistica.png' %}">
+                </div>
+                <p><strong>Analyse</strong> key trends be informed in real time</p>
+            </div>
+            <div class="large-3 medium-3 waypoint-element columns">
+                <div class="icon-holder icon-holder-3">
+                    <img src="{% static 'img/ours/trabajadores.png' %}">
+                </div>
+                <p><strong>Be accompanied </strong>by our team of experts to build your image on the Web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Block -->
+    <div class="parallax parallax-lines" style="background: url({% static 'img/paralax3.jpg' %});">
+        <div class="parallax-overlay"></div>
+        <div class="row lines-wrapper">
+            <div class="circle circle-1">
+                <div class="icon-container"></div>
+                <div class="description"> 500 Ideas </div>
+            </div>
+            <div class="circle circle-2">
+                <div class="connection-1"></div>
+                <div class="connection-2"></div>
+                <div class="icon-container"></div>
+                <div class="description"> 200 hours programming </div>
+            </div>
+            <div class="circle circle-3">
+                <div class="icon-container"></div>
+                <div class="description"> 7681 minutes responsive testing </div>
+            </div>
+            <div class="circle circle-4">
+                <div class="connection-1"></div>
+                <div class="connection-2"></div>
+                <div class="icon-container"></div>
+                <div class="description">   100km Strategy </div>
+            </div>
+            <div class="circle circle-5">
+                <div class="icon-container"></div>
+                <div class="description"> To reach you </div>
+            </div>
+
+            <div class="sub-circle sub-circle-one"></div>
+            <div class="sub-circle sub-circle-two"></div>
+            <div class="sub-circle sub-circle-three"></div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <section id="section-three" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+            <div class="columns large-12 large-centered small-centered intro-text">
+                <h2>Who we are</h2>
+                <p>
+                    <span style="color: #161616;">
+                      We combine human expertise with state-of-the art technological tools to bring you a high level of service.
+                        Our fresh and multi-disciplinary  approach ensures our clients the best technical solutions in the fields of:
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div id="details-1" class="reveal-modal medium" data-reveal>
+            <h2>George Navarro</h2>
+            <p class="text-left">
+                <b>Office :</b> Project Manager <br>
+                <b>E-mail : </b> gnavarrog1802@gmail.com<br>
+                <b>Description: <br/></b>
+                Team leader, always willing to teach and help. He's responsible with job and likes teamwork enviroment
+            </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="details-2" class="reveal-modal medium" data-reveal>
+            <h2>Nicolas Palau</h2>
+            <p class="text-left">
+                <b>Office :</b>Programmer <br>
+                <b>E-mail : </b>nicolaspalau@example.com <br>
+                <b>Description : </b>
+                Good kid mood to help fun, desire to improve every day, very funny
+            </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="details-3" class="reveal-modal medium" data-reveal>
+            <h2>Sandra Delgado</h2>
+            <p class="text-left">
+                <b>Office :</b>Graphic Designer<br>
+                <b>E-mail : </b>sandradelgado@example.com<br>
+                <b>Description : </b>
+                Very funny girl always ready to help with great imagination and professionalism
+            </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="details-4" class="reveal-modal medium" data-reveal>
+            <h2>Ronald Rivera</h2>
+            <p class="text-left">
+                <b>Office :</b>Digital marketing specialist<br>
+                <b>E-mail : </b>ronaldrivera@example.com <br>
+                <b>Description : </b>
+                Person with good cheer with good fun sociable attitude
+            </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+
+        <div id="details-888" class="reveal-modal medium" data-reveal>
+            <h2>Geanella Vallejo</h2>
+            <p class="text-left">
+                <b>Office :</b>Digital marketing specialist<br>
+                <b>E-mail : </b>geanellavallejo@example.com <br>
+                <b>Description : </b>
+                Person with good cheer with good fun sociable attitude
+            </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+
+        <div class="team-member row">
+            <div class="large-4 small-6 waypoint-element columns">&nbsp;</div>
+            <div class="large-4 small-6 waypoint-element columns">
+                <div class="team-content-wrap">
+                    <div class="hover-content">
+                        <a href="/books/1" data-reveal>
+                            <span class="border"></span>
+                            <div class="content">
+                                <h4>George Navarro</h4>
+                                <p class="text-left">
+                                    <b>Office :</b> Project Manager <br>
+                                    <b>E-mail : </b> gnavarrog1802@gmail.com<br>
+                                    <b>Description: <br/></b>
+                                    Team leader, always willing to teach and help. He's responsible with job and likes teamwork enviroment
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <img width="410" height="468" src="{% static 'img/ours/George.jpg' %}" class="attachment-team-member wp-post-image" alt="Sport fitness man push-ups" />
+                </div>
+                <h4>George Navarro</h4>
+                <h5>Project Manager</h5>
+                <div class="links">
+                    <a  href="/books/1" data-reveal>Open Book</a>
+                    <a href=" " data-reveal-id="details-1">The Details</a>
+                </div>
+                <br/>
+            </div>
+            <div class="large-4 small-6 waypoint-element columns">&nbsp;</div>
+        </div>
+
+        <div class="team-member row">
+            <div class="large-4 small-6 waypoint-element columns">
+                <div class="team-content-wrap">
+                    <div class="hover-content">
+                        <a href="/books/4" data-reveal>
+                            <span class="border"></span>
+                            <div class="content">
+                                <h4>Ronald Rivera</h4>
+                                <p class="text-left"><b>Office: </b>Digital marketing specialist<br>
+                                    <b>E-mail: </b>ronaldrivera@example.com <br>
+                                    <b>Description: </b>
+                                    Person with good cheer with good fun sociable attitude
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <img width="410" height="468" src="{% static 'img/ours/Ronald.jpg' %}" class="attachment-team-member wp-post-image" alt="skilled cyclist" />
+                </div>
+                <h4>Ronald Rivera</h4>
+                <h5>Digital Marketing Specialist</h5>
+                <div class="links">
+                    <a href="/books/4" data-reveal>Open Book</a>
+                    <a href="#" data-reveal-id="details-4">The Details</a>
+                </div>
+            </div>
+
+            <div class="large-4 small-6 waypoint-element columns">
+                <div class="team-content-wrap">
+                    <div class="hover-content">
+                        <a  href="/books/3" data-reveal>
+                            <span class="border"></span>
+                            <div class="content">
+                                <h4>Sandra Delgado</h4>
+                                <p class="text-left"><b>Office: </b>Graphic Designer<br>
+                                    <b>E-mail: </b>Sandradelgado@example.com <br>
+                                    <b>Description: </b>
+                                    Very funny girl always ready to help with great imagination and professionalism
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <img width="410" height="468" src="{% static 'img/ours/sandra.jpg' %}" class="attachment-team-member wp-post-image" alt="skilled cyclist" />
+                </div>
+                <h4>Sandra Delgado</h4>
+                <h5>Graphic Designer</h5>
+                <div class="links">
+                    <a href="/books/3" data-reveal>Open Book</a>
+                    <a href="#" data-reveal-id="details-3">The Details</a>
+                </div>
+            </div>
+
+            <div class="large-4 small-6 waypoint-element columns">
+                <div class="team-content-wrap">
+                    <div class="hover-content">
+                        <a  href="/books/2" data-reveal>
+                            <span class="border"></span>
+                            <div class="content">
+                                <h4>Nicolas Palau</h4>
+                                <p class="text-left"><b>Office: </b>Programmer <br>
+                                    <b>E-mail: </b>nicolaspalau@example.com <br>
+                                    <b>Description: </b>
+                                    Good kid mood to help fun, desire to improve every day, very funny
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <img width="410" height="468" src="{% static 'img/ours/Nicolas.jpg' %}" class="attachment-team-member wp-post-image" alt="?????????????" />
+                </div>
+                <h4>Nicolas Palau </h4>
+                <h5>Programmer</h5>
+                <div class="links">
+                    <a href="/books/2" data-reveal>Open Book</a>
+                    <a href="#" data-reveal-id="details-2">The Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-gallery" class="photostack photostack-start">
+        <div>
+            <figure>
+                <a href="{% static 'img/gallery/g1.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img ">
+                    <img src="{% static 'img/gallery/g1.jpg' %}" class="attachment-gallery-image" alt="" />
+                    <a class="pp_expand " title="Expand the image" href="#" style="display: inline;">Expand</a>
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Brainstorming</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g2.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g2.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title"> Apply methodologies</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g3.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g3.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Networking</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g4.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g4.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Working Hard</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g5.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g5.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Focused on the job </h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g6.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g6.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Creativity and Effectiveness</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g7.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g7.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Project Management</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g8.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g8.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Programming Force</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g9.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g9.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">More Coding every day</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g10.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g10.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Fun Team</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g11.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g11.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Project Explanation</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g12.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g12.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Interconnected</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g13.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g13.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Testing Code</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g14.jpg' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g14.jpg' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Responsive Design</h2>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="{% static 'img/gallery/g15.png' %}" rel="prettyPhoto[gallery]" class="photostack-img">
+                    <img width="240" height="240" src="{% static 'img/gallery/g15.png' %}" class="attachment-gallery-image" alt="" />
+                </a>
+                <figcaption>
+                    <h2 class="photostack-title">Team Victory</h2>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section-wrapp-container" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+            <div class="skew-wrapper"></div>
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>SEO</h2>
+                <p style="text-align: center">
+                    <strong>We push each site to the top of Google rankings: SEO</strong>
+                </p>
+                <p style="text-align: justify">
+                    SEO is the implementation of several techniques and good practices which will improve rankings in search engines,
+                    such as Google and Yahoo to allow better visibility of your business or carreer.
+                </p>
+                <p style="text-align: justify">
+                    Besides, SEO has a direct impact on the of our clients, for that reason we always include SEO in our services.
+                    We do this by ensuring that each on page strategy gives our clients <b>the best chance at position #1</b> at the first page result by writing <b>semantic,
+                    well structured code</b>, as well as ensuring page load times are as fast as possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Block -->
+    <div class="parallax parallax-slider" style="background: url({% static 'img/paralax4.jpg' %});">
+
+        <div class="parallax-overlay"></div>
+        <div class="row">
+            <div class="large-9 large-centered small-centered columns">
+                <ul class="parallax-slides">
+                    <li>
+                        <h4><strong>Lesson #1 </strong><br></h4>
+                        <p>Your Search Engine results are the most important channel for your online reputation.</p>
+                        <p>
+                            Whether you are a business or an individual, your name is looked up on search engines by a large number of people.
+                            Those search results influence others' perception of you.
+                            Your search engine results are critical for your online reputation.
+                        </p>
+                    </li>
+                    <li>
+                        <h4><strong>Lesson #2 </strong><br></h4>
+                        <p>
+                            Your overall brand/corporate image begins with printing presentation.
+                        </p>
+                        <p>
+                            We have developped a pack of corporate design products to allow you to present
+                            the best piece of you within a visual cohesion in all supports from your invoices to your website.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Clients -->
+    <section id="clients-section-loc" class="clients-new section-wrapp-container" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="row">
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>Industries we can serve</h2>
+                <p>
+                    For the nerd in all of you, we&#8217;ve built a new command line tool to spin up projects fast
+                    and added Libsass, speeding up your SCSS changes by 5X.
+                </p>
+            </div>
+        </div>
+
+        <div class="row new-members">
+            <div class="large-12 columns">
+                <div  class="new-wrapp">
+                    <ul>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img id="health" width="304" height="70" src="{% static 'img/ours/icono-salud.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Health</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-gastronimia.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Gastronomy</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-e-commerce.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>E-Commerce</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-publicidad%20copia%20(1).png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Advertising</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-diseño-de-interiores.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Interior design</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="new-wrapp">
+                    <ul>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-comectica-y-perfume.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Cosmetics</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-joyeria.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Jewelry</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-moda.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Fashion</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-sommerllerie.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Sommellerie</h4>
+                        </li>
+                        <li class="waypoint-element">
+                            <div class="image-holder">
+                                <img src="{% static 'img/ours/circulo.png' %}" height="195" width="195" alt="Member Border">
+                                <div class="border-wrapp">
+                                    <img width="304" height="70" src="{% static 'img/ours/icono-turismo.png' %}" class="attachment-team-member wp-post-image" alt="logo" />
+                                </div>
+                            </div>
+                            <h4>Tourism</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="parallax parallax-contact" style="background: url({% static 'img/paralax5.jpg' %});">
+        <div class="parallax-overlay"></div>
+        <div class="row">
+            <div class="large-12 columns">
+                <h4>Get in touch</h4>
+                <p>
+                    Don't hesitate to contact us for any information about our service
+                    or if you are interested in a job position, intership or conference.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-4 columns">
+                <div class="icon-holder">
+                    <img src="{% static 'img/contact1.png' %}" alt="Email">
+                </div>
+                <p> <a href="mailto:mcpons2010@hotmail.es?subject=Contact">mcpons2010@hotmail.es</a> </p>
+            </div>
+
+            <div class="large-4 columns">
+                <div class="icon-holder">
+                    <img src="{% static 'img/contact2.png' %}" alt="Phone">
+                </div>
+                <p> +1 (786)-663-0517 </p>
+            </div>
+
+            <div class="large-4 columns">
+                <div class="icon-holder">
+                    <img src="{% static 'img/contact3.png' %}" alt="Location">
+                </div>
+                <p> Miami, Fl. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <span id="contacto"></span>
+    <div class="row form-section">
+        <div class="large-10 columns large-centered small-centered">
+            <div class="wpcf7" id="wpcf7-f110-o1" lang="en-US" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <div class="row"> </div>
+                <form name="" action="/contacto" method="POST" class="wpcf7-form" novalidate="novalidate">
+                    <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <div class="input-wrap">
+                                <label for="name">
+                                    <br/>
+                                    <img src="{% static 'img/label1.png' %}"  alt="Icon">
+                                    <br/>
+                                </label>
+                                <br />
+                                <span class="wpcf7-form-control-wrap name">
+                                    <input type="text" id="name" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="NAME"/>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="large-6 columns">
+                            <div class="input-wrap">
+                                <label for="email">
+                                    <br/>
+                                    <img src="{% static 'img/label2.png' %}" alt="Icon">
+                                    <br/>
+                                </label>
+                                <br/>
+                                <span class="wpcf7-form-control-wrap email">
+                                    <input type="email" id="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="EMAIL" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="large-12 columns">
+                            <div class="input-wrap">
+                                <label for="subject">
+                                    <br/>
+                                    <img src="{% static 'img/label3.png' %}" alt="Featured Icon">
+                                    <br/>
+                                </label>
+                                <br/>
+                                <span class="wpcf7-form-control-wrap subject">
+                                    <input type="text" id="subject" name="subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="SUBJECT" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="large-12 columns">
+                            <div class="input-wrap">
+                                <span class="wpcf7-form-control-wrap message">
+                                    <textarea id="message" name="message" aria-invalid="false" placeholder="MESSAGE" ></textarea>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="large-12 columns submit-wrap">
+                            <input value="Send Message" class="wpcf7-form-control wpcf7-submit" id="submit1"/>
+                        </div>
+                    </div>
+                    <div id="alertacontacto" style="display: none"> </div>
+                </form>
+
+                <script type='text/javascript'>
+
+                    (function($) {
+
+                        $('#submit1').click(function(){
+                            var nombre = $("#name").val();
+                            var email = $("#email").val();
+                            var titulo = $("#subject").val();
+                            var mensaje = $("#message").val();
+                            var crmw = document.getElementsByName("csrfmiddlewaretoken")[0].value;
+                            $("#alertacontacto").html("");
+                            $.blockUI({"message": null});
+                            $.post("/contacto", {"nombre": nombre, "email": email, "titulo": titulo, "mensaje": mensaje, "csrfmiddlewaretoken":crmw}, function(data){
+                                $.unblockUI();
+                                if (data.result=='ok'){
+                                    $("#alertacontacto").removeClass("alert alert-danger").addClass("alert alert-success").html("<h5><img src='{% static 'img/ours/emailok.png' %}'  alt='Icon'/>  Su mensaje ha sido enviado y recepcionado con &eacute;xito en nuestro servidor. Gracias por su contacto. !!!</h5>");
+                                }else{
+                                    $("#alertacontacto").removeClass("alert alert-success").addClass("alert alert-danger").html("<h5><img src='{% static 'img/ours/emailbad.png' %}'  alt='Icon'/>  Ha ocurrido un error al enviar al servidor. Por favor intente mas tarde. Gracias.</h5>");
+                                }
+                                $("#alertacontacto").show();
+                                $("#name").val("");
+                                $("#email").val("");
+                                $("#subject").val("");
+                                $("#message").val("");
+
+                                setTimeout(function() {
+                                    $("#alertacontacto").fadeOut("slow");
+                                }, 3000);
+
+                            }, "json");
+
+                            return false;
+                        });
+
+                    })(jQuery);
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contenido %}
+
+    <section id="top-image" class="blog-page" style="background-image: url({% static 'img/ours/leaders3.png' %});">
+        <div class="overlay-mask"></div>
+        <div class="page-title-section row">
+            <div class="large-9 large-centered small-centered columns">
+                <h4>Leaders</h4>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Header Menu -->
+        <header id="top-header" class="homepage-header ">
+            <a href="#" class="explore" style="background-image: url({% static 'img/scroll-arrow.png' %});"></a>
+            <div class="row">
+                <div class="large-12  columns ">
+                    <div class="logo-holder">
+                        <a href="/" title="MP">
+                            <img src="{% static 'img/ours/logo_resumido.jpg' %}"/>
+                        </a>
+                    </div>
+                    <div class="skew-wrapper"></div>
+                    <ul id="nav-menu" class="menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1080"><a href="/">Home</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-one">About</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#services">Services</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ereputation">E-reputation</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="/brand">Corporate Identity</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/responsive">Responsive Design</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ecommerce">E-Commerce</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#ereputation">E-reputation</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#">Leaders</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/businesses">Businesses</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-three">Team</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="/#section-gallery">Gallery</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Social Icons -->
+        <ul id="socials">
+            <li><a target="_blank" title="Twitter" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+
+    </section>
+
+    <section id="blog-posts-two">
+
+        <div class="row blog-post single-blog-post">
+            <div class="large-12 columns">
+                <div class="single-content row">
+                    <h1 style="text-align: center">Ebodyguard for Leaders</h1>
+                    <br>
+                    <div class="row">
+                        <h4>Protect your profesional life</h4>
+                        <p class="fontcomun justify">
+                            Ebodyguard for leaders is a monitoring tool of social networks and different types of sources. Based on a search engine that continuously scans various types of sources
+                            (online press, blogs, forums, microblogs, social networks, videos, photos, etc)<br>
+                            Ebodyguard collects for you all the search results within a single interface where you have analysis tools, you can measure the impact of your marketing actions
+                            on social networks and have a better<b style="color: #ff0000;"> quality of dialogue with your followers and detractors.</b>
+                        </p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="row company-facts">
+                        <div class="large-3 medium-6 waypoint-element columns">
+                            <img src="{% static 'img/ours/oculus.png' %}" height="80" width="130" alt="Featured Image">
+                            <h6> <span>Watch</span></h6>
+                            <ul class="columns" style="text-align: left">
+                                <li>Create customised alerts about your brand, your competitors, your services and be informed in real time.</li>
+                                <li>Collect information through a single interface.</li>
+                                <li>Monitor all types of sources : blogs, news, forums, social networks , image sharing sites , video.</li>
+                            </ul>
+                        </div>
+                        <div class="large-3 medium-6 waypoint-element columns">
+                            <img src="{% static 'img/ours/estadistica.png' %}" height="80" width="130" alt="Featured Image">
+                            <h6><span>Analyze</span></h6>
+                            <ul  class="columns" style="text-align: left">
+                                <li>Identify key trends with clear dashboard.</li>
+                                <li>Export data and set your reports.</li>
+                                <li>Work as a team and follow the status of ongoing actions.</li>
+                            </ul>
+                        </div>
+                        <div class="large-3 medium-6 waypoint-element columns">
+                            <img src="{% static 'img/ours/people.png' %}" height="80" width="130" alt="Featured Image">
+                            <h6><span>discuss</span></h6>
+                            <ul  class="columns" style="text-align: left">
+                                <li>Connect your social networks and have advanced statistics on Facebook and Twitter.</li>
+                                <li>Measure the performance of your publications on social networks.</li>
+                                <li>Talk on social networks directly from your dashboard.</li>
+                            </ul>
+                        </div>
+                        <div class="large-3 medium-6 waypoint-element columns">
+                            <img src="{% static 'img/ours/trabajadores.png' %}" height="80" width="130" alt="Featured Image">
+                            <h6><span>Strategic Advice</span></h6>
+                            <ul class="columns" style="text-align: left">
+                                <li>Our team of experts are at your disposal to help you to build your image on the Web
+                                    by creating efficient marketing actions, dossiers de press, announcements.</li>
+                                <li>Animating a Brand community with a deeper quality of speech.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center">In our company all our websites and apps are e-reputation driven</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="single-slider row">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="{% static 'img/ours/leaders1.png' %}" alt="slider1"></li>
+                        <li><img src="{% static 'img/ours/leaders2.png' %}" alt="slider2"></li>
+                        <li><img src="{% static 'img/ours/leaders3.png' %}" alt="slider3"></li>
+                        <li><img src="{% static 'img/ours/leaders4.png' %}" alt="slider4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-two-section" class="section-wrapp-container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="row">
+            <div class="columns large-9 large-centered small-centered intro-text">
+                <h2>Get in touch</h2>
+                <p class="fontcomun">
+                    Don't hesitate to contact us for any information about our service or
+                    if you are interested in a job position, intership or conference.
+                </p>
+            </div>
+        </div>
+        <div class="row contact-map-section" style="background-image:url({% static 'img/ours/ecuador-eps.png' %})">
+            <div class="large-10 columns large-centered small-centered waypoint-element">
+                <div>
+                    <br><br><br><br>
+                </div>
+
+                <div class="large-5 columns flip-container2">
+                    <div class="flipper2">
+                        <div class="wrap2 front2">
+                            <div class="border border-one"></div>
+                            <div class="border border-two"></div>
+                            <h2>George Navarro</h2>
+                            <span>Project Manager</span>
+                            <ul>
+                                <li><a href="mailto:gnavarrog1802@gmail.com">gnavarrog1802@gmail.com</a></li>
+                                <li>+1 (786) 663-0517</li>
+                            </ul>
+                        </div>
+                        <div class="back2 wrap2">
+                            <div class="border border-one"></div>
+                            <div class="border border-two"></div>
+                            <span>Senior Software Developer</span>
+                            <p>
+                                Team leader, always willing to teach and help. He's responsible with job and likes teamwork enviroment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-5 columns flip-container2">
+                    <div class="flipper2">
+                        <div class="wrap2 front2">
+                            <div class="border border-one"></div>
+                            <div class="border border-two"></div>
+                            <h2>Maria Pons</h2>
+                            <span>Digital Supervisor</span>
+                            <ul >
+                                <li><a href="mailto:mcpons2010@hotmail.es">mcpons2010@hotmail.es</a></li>
+                                <li>+1 (786) 663-7015</li>
+                            </ul>
+                        </div>
+                        <div class="back2 wrap2">
+                            <div class="border border-one"></div>
+                            <div class="border border-two"></div>
+                            <span>Digital Marketing Manager</span>
+                            <p>
+                                Person with good cheer work inspiring the team with a good positive attitude, always thinking of getting ahead.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

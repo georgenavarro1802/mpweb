@@ -1,0 +1,385 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name='robots' content='noindex,follow' />
+    <meta name='description' content='MP WebSite Demo App' />
+    <meta name='keywords' content='WebSite Demo App' />
+
+    <title>{{ title }}</title>
+
+    <link rel="icon" href="{% static 'img/ours/favicon.ico' %}">
+
+    <link rel='stylesheet' id='contact-form-7-css'  href='{% static 'css/styles.css' %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='woocommerce_chosen_styles-css'  href='{% static 'css/woocommerce_chosen.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'  href='{% static 'css/woocommerce_layout.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='{% static 'css/woocommerce_smallscreen.css' %}' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'  href='{% static 'css/woocommerce.css' %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='athletica-lato-css'  href='http://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700&#038;ver=3.9.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-icons-css'  href='{% static 'css/font-awesome.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-sidr-css'  href='{% static 'css/ath-sdir.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-animations-css'  href='{% static 'css/ath-animations.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-svg-css'  href='{% static 'css/ath-svg.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-photostack-css'  href='{% static 'css/ath-photostack.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-prettyphoto-css'  href='{% static 'css/ath-prettyphoto.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-flexslider-css'  href='{% static 'css/flexslider.css' %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='athletica-bxslider-css'  href='{% static 'css/ath-bxslider.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-app-css'  href='{% static 'css/ath-app.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-style-css'  href='{% static 'css/ath-style.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-responsive-css'  href='{% static 'css/ath-responsive.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='athletica-shortcodes-css'  href='{% static 'css/ath-shortcodes.css' %}' type='text/css' media='all' />
+
+    <script type='text/javascript' src='{% static 'js/jquery.min.js' %}'></script>
+    <script type='text/javascript' src='{% static 'js/jquery-migrate.min.js' %}'></script>
+    <script type='text/javascript' src='{% static 'js/modernizr-2.7.1.min.js' %}'></script>
+
+    <style type="text/css">
+        .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+
+        .parallax.parallax-lines .lines-wrapper .circle:hover,#section-three .team-member .large-3 .links a,.parallax.parallax-slider-blogs .large-12:last-child > a,.parallax.parallax-slider-shop .large-12:last-child > a,.parallax.parallax-squares .square-container .square-holder:hover,.parallax.parallax-squares .square-container .square-holder:hover:before,#section-five .filter-menu ul li a,.form-section .input-wrap input[type="text"],.form-section .input-wrap input[type="email"],.parallax.parallax-new-facts .facts-container ul li .icon-holder,.shop-link-wrapp a,.js .photostack:after,#mockups-container .large-6 > a,#instafeed a,.parallax.parallax-our-services #service-description ul a,#masonry-latest-posts #masonry-wrapp .latest-entry a h1,#services-new .view-portfolio,.masonry-blog-container .large-12 .view-more,#services-new .new-services ul li:hover .img-holder,.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover,select,.widget_search input[type="search"], .widget_product_search input[type="search"],.widget-area .widget-title,.panel,.woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message, .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info,#blog-posts .blog-holder .blog-main-content > a.read-more,.parallax.parallax-testimonials .testimonials-slider li {
+            border-color: #f54f36;
+        }
+
+        .intro-text h2:before,.parallax .parallax-slides li h4:before,.parallax.parallax-slider-blogs h4:before, .parallax.parallax-slider-shop h4:before,.parallax.parallax-new-facts h4:before,#contact-section .large-12 h4:before,.parallax.parallax-counters h4:before,#top-image.blog-page .page-title-section h4:before {
+            background-image: url('{% static 'img/separador-de-lineas.png' %}');
+        }
+
+        #section-five #portfolio-container .hover-content .content {
+            background-image: url('{% static 'img/plus-circle.png' %}');
+        }
+
+        .parallax.parallax-slider-blogs .bx-wrapper .bx-next, .parallax.parallax-slider-shop .bx-wrapper .bx-next {
+            background-image: url('{% static 'img/blog-right.png' %}');
+        }
+
+        .parallax.parallax-slider-blogs .bx-wrapper .bx-prev, .parallax.parallax-slider-shop .bx-wrapper .bx-prev {
+            background-image: url('{% static 'img/blog-left.png' %}');
+        }
+
+        #section-two .bx-wrapper .bx-next {
+            background-image: url('{% static 'img/arrow-right.png' %}');
+        }
+
+        #section-two .bx-wrapper .bx-prev {
+            background-image: url('{% static 'img/arrow-left.png' %}');
+        }
+
+        footer > a {
+            background-image: url('{% static 'img/gotop.png' %}');
+        }
+
+        .parallax.parallax-our-services #services-pager .large-2 a.active .active-arrow {
+            background-image: url('{% static 'img/service-arrow.png' %}');
+        }
+
+        .full-width-wrapper .large-2 .full-width-gallery .gallery-content button:before {
+            background-image: url('{% static 'img/sharing.png' %}');
+        }
+
+        #section-three .team-member .large-3 h4 {
+            background-image: url('{% static 'img/separador-de-lineas.png' %}');
+        }
+
+        .parallax .bx-wrapper .bx-pager.bx-default-pager a {
+            background-image: url('{% static 'img/bullets.png' %}');
+        }
+    </style>
+
+    <style type="text/css" title="dynamic-css" class="options-output">
+        #top-header .logo-holder a:hover,#blog-posts .blog-holder .blog-main-content h1 a:hover,#blog-posts .blog-holder .blog-side .sharings-and-tags .tags a:hover,a,a:hover, a:focus,#socials li a:hover,.parallax.parallax-slider-blogs .blog-slides li a:hover h1, .parallax.parallax-slider-blogs .blog-slides li a:hover span, .parallax.parallax-slider-shop .products-slider-shop li a:hover h1, .parallax.parallax-slider-shop .products-slider-shop li a:hover span,.product-holder > a:hover h2,.product-holder a p,.parallax.parallax-new-facts .facts-container ul li:hover p,#section-seven .blog-section .large-3.blog-holder:hover .post-title h1 a, #section-seven .blog-section .large-3.blog-holder:hover .post-title > a,#mockups-container h4 span,#mockups-container h4 span,.parallax.parallax-counters .count-holder div,.parallax.parallax-our-services #service-description ul a:hover,.masonry-blog-container .element .content-section h6,.widget-area aside a:hover,#top-header .logo-holder a:hover, #blog-posts .blog-holder .blog-main-content h1 a:hover, #blog-posts .blog-holder .blog-side .sharings-and-tags .tags a:hover, a, a:hover, a:focus, #socials li a:hover, .parallax.parallax-slider-blogs .blog-slides li a:hover h1, .parallax.parallax-slider-blogs .blog-slides li a:hover span, .parallax.parallax-slider-shop .products-slider-shop li a:hover h1, .parallax.parallax-slider-shop .products-slider-shop li a:hover span, .product-holder > a:hover h2, .product-holder a p, .parallax.parallax-new-facts .facts-container ul li:hover p, #section-seven .blog-section .large-3.blog-holder:hover .post-title h1 a, #section-seven .blog-section .large-3.blog-holder:hover .post-title > a, #mockups-container h4 span, #mockups-container h4 span, .parallax.parallax-counters .count-holder div, .parallax.parallax-our-services #service-description ul a:hover, .masonry-blog-container .element .content-section h6,.woocommerce #content table.cart a.remove, .woocommerce table.cart a.remove, .woocommerce-page #content table.cart a.remove, .woocommerce-page table.cart a.remove,#comments input[type="submit"]:hover,#comments article a,#comments code,#section-seven .blog-section .large-3.blog-posts-info .top-holder span,#section-seven .blog-section .large-3.blog-posts-info .sharings a,#masonry-latest-posts #masonry-wrapp .latest-entry a:hover h1,.woocommerce ul.cart_list li a:hover, .woocommerce ul.product_list_widget li a:hover, .woocommerce-page ul.cart_list li a:hover, .woocommerce-page ul.product_list_widget li a:hover,.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price, .woocommerce #content div.product p.price, .woocommerce #content div.product span.price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-page #content div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page div.product p.price, .woocommerce-page div.product span.price,.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover,.company-facts .large-3 h6 span{color:#f54f36;}body{font-weight:normal;font-style:normal;}h1, h2, h3, h4, h5, h6,#blog-posts .blog-holder .blog-main-content h1{font-weight:normal;font-style:normal;}#top-image .top-main-content h1,.parallax.parallax-twitter .twitter-feed h3,#section-four.homepage-two .holder-logo h1{font-weight:normal;font-style:normal;}
+    </style>
+
+    {% block heading %}
+    {% endblock %}
+</head>
+
+<body class="home page page-id-978 page-template">
+
+<a id="simple-menu" href="#sidr">
+    <i class="fa fa-list"></i> MP
+</a>
+
+<div id="sidr">
+    <button>
+        <i class="fi-x"></i>Close Menu
+    </button>
+    <ul id="menu-primary-menu" class="menu">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1080"><a href="#">Home</a></li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#section-one">About</a></li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#services">Services</a>
+            <ul class="sub-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/ereputation">E-Reputation</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/brand">Corporate Identity</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/responsive">Responsive Design</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ecommerce">E-Commerce</a></li>
+            </ul>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="#ereputation">E-Reputation</a>
+            <ul class="sub-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="#section-gallery">Leaders</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="#section-gallery">Businesses</a></li>
+            </ul>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1084"><a href="#section-three">Team</a></li>
+        <li id="menu-item-1088" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1088"><a href="#section-gallery">Gallery</a></li>
+        <li id="menu-item-1088" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1088"><a href="#contact-section">Contact</a></li>
+    </ul>
+</div>
+
+{% block contenido %}
+    <!-- PAGES CONTENT -->
+{% endblock %}
+
+<!-- Footer -->
+<footer>
+    <a href="#" class="go-top"></a>
+    <div class="row">
+        <div class="columns center" style="margin-top: 10px">
+            <p> 2016 &copy; All rights reserved</p>
+        </div>
+        <ul id="socials">
+            <li>
+                <a target="_blank" title="Twitter" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li> <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+    </div>
+</footer>
+
+
+<script type='text/javascript' src='{% static 'js/jquery-form.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.blockUI.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/woocommerce.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/foundation.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/app.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/classie.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/waypoints.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/smoothScroll.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.parallax-1.1.3.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.isotope.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/photostack.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/svganimations.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/insta-feed.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.bxslider.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.prettyPhoto.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.sidr.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/flexslider.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/main.js' %}'></script>
+<script src='{% static 'js/jquery.circliful.min.js' %}'></script>
+
+<script type='text/javascript'>
+
+    (function($) {
+
+        $('form').find('br').remove();
+
+        $('.feed ul').bxSlider({
+            controls: false,
+            adaptiveHeight: true,
+            useCSS : false,
+            infiniteLoop: false,
+            hideControlOnEnd: true
+        });
+
+        if ($('#instafeed').length > 0) {
+
+            // Insta Feed
+            var feed = new Instafeed({
+                get: 'tagged',
+                tagName: 'dribbble',
+                limit: 10,
+                sortBy : 'most-liked',
+                resolution : 'low_resolution',
+                accessToken :'1068835781.467ede5.bed6906b0d4f43279648a2d6bf6c7b0d',
+                template: '<div class="large-2 small-6 medium-4 columns"><a target="_blank" title="{{caption}}" href="{{link}}" rel="prettyPhoto[gallery]"><img src="{{image}}" /><span class="likes">Likes: {{likes}}</span></a></div>'
+            });
+            feed.run();
+
+            $(window).load(function(){
+
+                $('#instafeed').prepend('<div class="large-2 columns"><div class="insta-title"><img src="{% static 'img/instagram.png' %}" height="306" width="306" alt="Featured title"><div class="border"></div></div></div>');
+                $('#instafeed').append('<div class="large-2 columns"><a class="view-more" href="http://instagram.com/" target="_blank"><img src="{% static 'img/insta-more.png' %}" height="306" width="306" alt="Featured Image"><div class="border"></div></a></div>');
+            });
+        }
+
+
+        if ($('.parallax-counters').length > 0) {
+            $('.parallax-counters').waypoint(function() {
+
+                $(".counter-1").countTo({
+                    from: 0,
+                    to: 792,
+                    speed: 1600,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                    }
+                });
+
+
+                $(".counter-2").countTo({
+                    from: 0,
+                    to: 1821,
+                    speed: 1600,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                    }
+                });
+
+
+                $(".counter-3").countTo({
+                    from: 0,
+                    to: 381,
+                    speed: 1600,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                    }
+                });
+
+
+                $(".counter-4").countTo({
+                    from: 0,
+                    to: 3821,
+                    speed: 1600,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                    }
+                });
+
+            }, { offset: '80%' });
+        }
+
+        if ($('#masonry-wrapp').length > 0) {
+            // Init Masonry
+            var $container = $('#masonry-wrapp');
+            // initialize Masonry after all images have loaded
+            $container.imagesLoaded(function() {
+                $container.masonry({
+                    isFitWidth: true,
+                    itemSelector: '.latest-entry',
+                    gutter: 20
+                });
+            });
+        }
+
+        // Fade Top Section on Scroll
+        var target = $('.top-main-content');
+        var targetHeight = target.outerHeight();
+
+        $(document).scroll(function(e) {
+            var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+            if (scrollPercent >= 0) {
+                target.css('opacity', scrollPercent);
+            }
+        });
+
+        if ($('.masonry-blog-container').length > 0 || $('#jstwitter').length > 0 || $('#portfolio-container').length > 0) {
+            $.Isotope.prototype._getMasonryGutterColumns = function() {
+                var gutter = this.options.masonry.gutterWidth || 0;
+                containerWidth = this.element.parent().width();
+                this.masonry.columnWidth = this.options && this.options.masonry.columnWidth ||
+                        this.$filteredAtoms.outerWidth(true) ||
+                        containerWidth;
+                this.masonry.columnWidth += gutter;
+                this.masonry.cols = Math.floor(containerWidth / this.masonry.columnWidth);
+                this.masonry.cols = Math.max(this.masonry.cols, 1);
+            };
+
+            $.Isotope.prototype._masonryReset = function() {
+                this.masonry = {};
+                this._getMasonryGutterColumns();
+                var i = this.masonry.cols;
+                this.masonry.colYs = [];
+                while (i--) {
+                    this.masonry.colYs.push(0);
+                }
+            };
+
+            $.Isotope.prototype._masonryResizeChanged = function() {
+                var prevColCount = this.masonry.cols;
+                this._getMasonryGutterColumns();
+                return (this.masonry.cols !== prevColCount);
+            };
+
+            $.Isotope.prototype._masonryGetContainerSize = function() {
+                var gutter = this.options.masonry.gutterWidth || 0;
+                var unusedCols = 0,
+                        i = this.masonry.cols;
+                while (--i) {
+                    if (this.masonry.colYs[i] !== 0) {
+                        break;
+                    }
+                    unusedCols++;
+                }
+                return {
+                    height: Math.max.apply(Math, this.masonry.colYs),
+                    width: ((this.masonry.cols - unusedCols) * this.masonry.columnWidth) - gutter
+                };
+            };
+
+            var $containerBlog = $('.masonry-blog-container');
+
+            $containerBlog.imagesLoaded( function(){
+                $containerBlog.isotope({
+                    masonry: {
+                        columnWidth: 0
+                    }
+                });
+            });
+
+            var $container = $('#portfolio-container');
+
+            $container.imagesLoaded(function() {
+                $container.isotope({
+                    masonry: {
+                        columnWidth: 0,
+                        isFitWidth: true
+                    }
+                });
+            });
+
+            var $containerFeed = $('#jstwitter');
+            // initialize
+            $containerFeed.masonry({
+                columnWidth: 0,
+                itemSelector: '.element'
+            });
+        }
+
+        // filter items when filter link is clicked
+        $('#filters a').click(function() {
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector
+            });
+            return false;
+        });
+
+        // Add PrettyPhoto to Links with Rel
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'light_square'
+        });
+
+        // Flex Slider Init
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                useCSS: false
+            });
+        });
+
+
+    })(jQuery);
+
+</script>
+
+{% block javascript %}
+{% endblock %}
+
+</body>
+</html>

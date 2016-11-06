@@ -1,0 +1,340 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contenido %}
+    <!-- Image Top Container -->
+    <section id="top-image" class="blog-page" style="background-image: url({% static 'img/ours/brand10.png' %});" xmlns="http://www.w3.org/1999/html">
+        <div class="overlay-mask"></div>
+        <div class="page-title-section row">
+            <div class="large-9 large-centered small-centered columns">
+                <h4>Brand/Corporate identity</h4>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Header Menu -->
+        <header id="top-header" class="homepage-header ">
+            <a href="#" class="explore" style="background-image: url({% static 'img/scroll-arrow.png' %});"></a>
+            <div class="row">
+                <div class="large-12  columns ">
+                    <div class="logo-holder">
+                        <a href="/" title="MP">
+							<img src="{% static 'img/ours/logo_resumido.jpg' %}"/>
+						</a>
+                    </div>
+                    <div class="skew-wrapper"></div>
+                    <ul id="nav-menu" class="menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1080"><a href="/">Home</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-one">About</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#services">Services</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ereputation">E-reputation</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="#">Corporate Identity</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="/responsive">Responsive Design</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="/ecommerce">E-Commerce</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#ereputation">E-reputation</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/leaders">Leaders</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/businesses">Businesses</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#section-three">Team</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085"><a href="/#section-gallery">Gallery</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1087"><a href="/#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Social Icons -->
+        <ul id="socials">
+            <li><a target="_blank" title="Twitter" href="https://twitter.com/aokgeorge"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/gnavarrog1802"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog-posts-two">
+
+        <div class="row blog-post single-blog-post">
+            <div class="large-12 columns page-subtitle">
+                <div class="single-content row">
+                    <div class="large-6 columns" style="text-align: justify">
+                        <h4>Brand/Corporate Identity</h4>
+                        <p>
+                            <strong>The corporate identity can support your reputation or show your weaknesses</strong><br>
+                        </p>
+                        <p>
+                            If you have doubts about the quality of your brand identity, the answer might be here!
+                        </p>
+
+                        <h6>What is a brand identity?</h6>
+                        <p>
+                            Is the combination of digital and print components to suit brand´s vision of itself, its personality, values and graphic concept.
+                            In terms of content brand identity takes into consideration a large range of elements such as company history, its origins, and even anecdotes.
+                        </p>
+                        <p class="cuadro">
+                            "Identity is the way the brand wants to be perceived , as opposed to the image, which is how the mark is actually perceived by consumers ."<br>
+                            Geraldine Michel, brand specialist, professor at the University of IAE Paris, Sorbonne Graduate Business School.
+                        </p>
+                        <p>
+                            If there is a gap between brand identity and image, it means the brand is out of touch with market´s perception, and so selling its products will be more difficult.
+                            Besides, the brand image held by consumers can reach a point at which the company has to rebrand itself or risk not bringing in sales.
+                        </p>
+
+                        <h6>How important is your story telling?</h6>
+
+                        <p class="cuadro">
+                            "Web 2.0 has brought us into a new era of communication, the era of digital story telling. Individuals are expecting brands to go further than a simply guarantee quality,
+                            they want to be told stories, engaging and interactive stories which transform brands into social objects. This is why digital communications are important for brands."
+                        </p>
+                    </div>
+                    <div class="large-6 columns">
+                        <div class="single-images row">
+                            <figure>
+                                <figcaption>
+                                    <a href="{% static 'img/cocolobo.jpg' %}">Cocolobo</a></figcaption>
+                                <img src="{% static 'img/ours/brand1.png' %}" height="550" width="500" alt="Featured Image" style="padding-bottom: 30px" >
+                            </figure>
+                            <figure>
+                                <figcaption><a href="{% static 'img/terrasen.jpg' %}">Terrassen</a></figcaption>
+                                <img src="{% static 'img/ours/brand2.png' %}" height="550" width="500" alt="Featured Image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="center">
+                    <h3>The digital Story telling make Social Stories. </h3>
+                    <h4>L'Odyssée de Cartier</h4>
+                    <h4>Jewellers since 1847</h4>
+                    <p>
+                        In this example Cartier want us to touch the dream of luxury by blurring the boundaries between fiction and reality.
+                    </p>
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/yaBNjTtCxd4" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+
+                <div class="justify">
+                    <h4>What is the purpose of building a brand identity?</h4>
+                    <p class="fontcomun">
+                        In a highly competitive digital environment, brand identity is at the heart of
+                        business development strategy because it enables to fix a vision of the brand which is its profile and DNA.
+                        This is the most important phase of the birth of a brand because customer segmentation and market positioning will depend of it.
+                    </p>
+                    <br>
+                    <h4>How to create a Brand identity?</h4>
+                    <p class="fontcomun">
+                        To create a brand identity , several elements must be worked: the name of your brand, logo, colors, elements of your customer service policy and all that constitutes the history of your brand, its origin and its past.
+                        To make your brand stronger, we work to make these different elements much more  powerful, consistent and complementary with each other.
+                    </p>
+                    <h4>Advantages</h4>
+                    <ol class="fontcomun">
+                        <img src="{% static 'img/ours/number1.png' %}" width="30" height="30"/> Enable the brand to become known and then be recognized for that identity.<br>
+                        <img src="{% static 'img/ours/number2.png' %}" width="30" height="30"/> Helps to guide important decisions about the brand and ensures consistency between the various actions in time.<br>
+                        <img src="{% static 'img/ours/number3.png' %}" width="30" height="30"/> Reveal the product by showcasing and telling engaging stories.<br>
+                        <img src="{% static 'img/ours/number4.png' %}" width="30" height="30"/> Create innovative eCommerce moments that goes beyond the vision of well-structured catalog.<br>
+                        <img src="{% static 'img/ours/number5.png' %}" width="30" height="30"/> It informs and reassure your contributors about the quality and seriousness they can hope of your business.<br>
+                    </ol>
+                    <br>
+                    <h4>Campaign strategy</h4>
+                    <p class="fontcomun">
+                        We aim to provide rich and interactive customer experience combining marketing strategy, journalistic writing and the latest programming languages.
+                        To transform a user visit into  a customer purchasing trigger, we create marketing concepts along with interactive features that give your campaign a viral potential.
+                        With the support of our UX webdesigner and our programmers we puto on stage each element that constitutes your brand identity in order to use digital tools such animations
+                        and java effects to support your brand storytelling.
+                    </p>
+                    <a href="">Let´s see some of our animations and effects…</a> <br><br><br><br>
+                    <h3 class="center">Your total identity pack </h3>
+
+                    <div class="row">
+                        <br>
+                        <div class=" large-6 columns">
+                            <img src="{% static 'img/ours/packflexible.png' %}"/>
+                        </div>
+                        <br>
+                        <div class=" large-6 columns">
+                            <p class="fontcomun">
+                                Ensure your first impression is a good one with strong branding, both online and in person to engage with your market in a professional way.
+                            </p>
+                            <h5>We propose a combination of digital and print components</h5>
+                            <p class="fontcomun">
+                                Our team of programmers ensures the process goes in the right direction while Our graphic team brings your company’s vision to life.
+                                Even if you are not quite sure what you want yet, they have a wealth of ideas to guide you through the creative process.
+                            </p>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+                <div style="text-align: center">
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                        <tr>
+                            <th>Digital </th>
+                            <th>Print </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Responsive Website: suits to all devices</td>
+                            <td>Logo design and creation</td>
+                        </tr>
+                        <tr>
+                            <td>HTML5, CSS3,  Java Script, jQuery/jQuery Mobile</td>
+                            <td>Business card with your QRcode pointing to your website</td>
+                        </tr>
+                        <tr>
+                            <td>1 year iWeb server</td>
+                            <td>Graphic charter</td>
+                        </tr>
+                        <tr>
+                            <td>Custom design perfectly captures your brand image</td>
+                            <td>Corporate agenda</td>
+                        </tr>
+                        <tr>
+                            <td>A showcase website in 5 pages</td>
+                            <td>Envelopes</td>
+                        </tr>
+                        <tr>
+                            <td>Contact form</td>
+                            <td>Letterhead</td>
+                        </tr>
+                        <tr>
+                            <td>1 year Domain name</td>
+                            <td>Pay slips with QR code to download the pdf</td>
+                        </tr>
+                        <tr>
+                            <td>1 year Hosting</td>
+                            <td>Invoices with QR code to download the pdf</td>
+                        </tr>
+                        <tr>
+                            <td>5 email addresses</td>
+                            <td>10 Mouse pads</td>
+                        </tr>
+                        <tr>
+                            <td>Natural SEO</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Google Analytics</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Custom QR code</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Content creation: text, icons and images</td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <p class="cuadro fontcomun">
+                    More elements on demand, contact our technical advisor to analyse your needs,
+                    answer your questions and get a free quotation: gnavarrog1802@gmail.com
+                </p>
+                <br><br>
+                <p class="fontcomun">
+                    If you want a 100% manageable website we provide on demand a CMS which will allow you to be independent to update the content and implement SEO profesionally.
+                    To get a free quotation contact our technical advisor: <b>gnavarrog1802@gmail.com</b>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="slider-wrapper">
+        <div class="single-slider row">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="{% static 'img/ours/brand1a.png' %}" alt="slider1"></li>
+                    <li><img src="{% static 'img/ours/brand2a.png' %}" alt="slider2"></li>
+                    <li><img src="{% static 'img/ours/brand3.jpg' %}" alt="slider3"></li>
+                    <li><img src="{% static 'img/ours/brand4.png' %}" alt="slider4"></li>
+                    <li><img src="{% static 'img/ours/brand5.png' %}" alt="slider5"></li>
+                    <li><img src="{% static 'img/ours/brand7.png' %}" alt="slider6"></li>
+                    <li><img src="{% static 'img/ours/brand8.png' %}" alt="slider7"></li>
+                    <li><img src="{% static 'img/ours/brand9.png' %}" alt="slider8"></li>
+                    <li><img src="{% static 'img/ours/brand10.png' %}" alt="slider9"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact-two-section" class="section-wrapp-container" style="padding-top: 80px; padding-bottom: 80px;">
+		<div class="row">
+			<div class="columns large-9 large-centered small-centered intro-text">
+		 		<h2>Get in touch</h2>
+				<p class="fontcomun">
+				   Don't hesitate to contact us for any information about our service or
+                    if you are interested in a job position, intership or conference.
+				</p>
+			</div>
+		</div>
+		<div class="row contact-map-section" style="background-image:url({% static 'img/ours/ecuador-eps.png' %})">
+			<div class="large-10 columns large-centered small-centered waypoint-element">
+				<div>
+					<br><br><br><br>
+				</div>
+
+				<div class="large-5 columns flip-container2">
+					<div class="flipper2">
+						<div class="wrap2 front2">
+							<div class="border border-one"></div>
+							<div class="border border-two"></div>
+							<h2>George Navarro</h2>
+							<span>Project Manager</span>
+							<ul>
+								<li><a href="mailto:gnavarrog1802@gmail.com">gnavarrog1802@gmail.com</a></li>
+								<li>+1 (786) 663-0517</li>
+							</ul>
+						</div>
+						<div class="back2 wrap2">
+							<div class="border border-one"></div>
+							<div class="border border-two"></div>
+							<span>Senior Software Developer</span>
+							<p>
+                                Team leader, always willing to teach and help. He's responsible with job and likes teamwork enviroment
+                            </p>
+						</div>
+					</div>
+				</div>
+
+                <div class="large-5 columns flip-container2">
+					<div class="flipper2">
+						<div class="wrap2 front2">
+							<div class="border border-one"></div>
+							<div class="border border-two"></div>
+							<h2>Maria Pons</h2>
+							<span>Digital Supervisor</span>
+							<ul >
+								<li><a href="mailto:mcpons2010@hotmail.es">mcpons2010@hotmail.es</a></li>
+								<li>+1 (786) 663-7015</li>
+							</ul>
+						</div>
+						<div class="back2 wrap2">
+							<div class="border border-one"></div>
+							<div class="border border-two"></div>
+							<span>Digital Marketing Manager</span>
+							<p>
+                                Person with good cheer work inspiring the team with a good positive attitude, always thinking of getting ahead.
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
